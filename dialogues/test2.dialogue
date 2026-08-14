@@ -1,0 +1,7 @@
+MUSIQUE choeur2.wav
+FOND image_monastère_extérieur.png
+
+ML01|Le Suisse|neutre|Je suis suisse|C
+QUESTION	ML01|Le Suisse|neutre|Tu me crois ?|C	Oui>test.dialogue	Non>#1
+ML01|Le Suisse|neutre|Je le jure|C
+FIN #1

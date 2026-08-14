@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://jio81goaju3q"]
+
+[ext_resource type="Script" uid="uid://bl5126k0s7iru" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://cb112gxa32sjy" path="res://menu_accueil.gd" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dp4tmsujpsa5l" path="res://fonds/image_monastère_extérieur.png" id="4_1bvp3"]
+
+[node name="main" type="Node2D" unique_id=1312263869]
+script = ExtResource("1_0xm2m")
+
+[node name="menu_accueil" type="Control" parent="." unique_id=402921039]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 800.0
+offset_bottom = 600.0
+script = ExtResource("3_h2yge")
+
+[node name="Sprite2D" type="Sprite2D" parent="menu_accueil" unique_id=1824644470]
+texture = ExtResource("4_1bvp3")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="menu_accueil" unique_id=857814533]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="menu" type="VBoxContainer" parent="menu_accueil/CenterContainer" unique_id=1620791349]
+layout_mode = 2
+
+[node name="bouton_nouveau" type="Button" parent="menu_accueil/CenterContainer/menu" unique_id=590526979]
+layout_mode = 2
+text = "Banûm wam ngamaüé ranga"
+
+[node name="bouton_continuer" type="Button" parent="menu_accueil/CenterContainer/menu" unique_id=1267043045]
+layout_mode = 2
+text = "Nérécopûm an ngamaüé"
+
+[node name="bouton_charger" type="Button" parent="menu_accueil/CenterContainer/menu" unique_id=1028848059]
+layout_mode = 2
+text = "Woüazûm wam ngamaüé"
+
+[node name="bouton_options" type="Button" parent="menu_accueil/CenterContainer/menu" unique_id=766074552]
+layout_mode = 2
+text = "Wöm zorèwé "
+
+[node name="bouton_crédits" type="Button" parent="menu_accueil/CenterContainer/menu" unique_id=1933819516]
+layout_mode = 2
+text = "Wöm ronowé"
+
+[node name="bouton_quitter" type="Button" parent="menu_accueil/CenterContainer/menu" unique_id=111452942]
+layout_mode = 2
+text = "Ganémûm"
+
+[connection signal="pressed" from="menu_accueil/CenterContainer/menu/bouton_nouveau" to="." method="nouvellle_partie"]
+[connection signal="pressed" from="menu_accueil/CenterContainer/menu/bouton_continuer" to="." method="continuer_partie"]
+[connection signal="pressed" from="menu_accueil/CenterContainer/menu/bouton_charger" to="." method="_on_bouton_charger_pressed"]
+[connection signal="pressed" from="menu_accueil/CenterContainer/menu/bouton_quitter" to="." method="quitter"]

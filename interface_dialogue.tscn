@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://c6dimy0ey7vqc"]
+
+[ext_resource type="Script" uid="uid://bcq887kdlxw0v" path="res://interface_dialogue.gd" id="1_k3nks"]
+[ext_resource type="FontFile" uid="uid://1mqnpx431nbw" path="res://polices/Comico_Complete/Fonts/OTF/Comico-Regular.otf" id="2_0cxl6"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qxmyx"]
+size = Vector2(256, 512)
+
+[sub_resource type="SystemFont" id="SystemFont_0cxl6"]
+font_names = PackedStringArray("Noto Mono")
+
+[sub_resource type="Theme" id="Theme_qxmyx"]
+RichTextLabel/fonts/mono_font = SubResource("SystemFont_0cxl6")
+RichTextLabel/fonts/normal_font = ExtResource("2_0cxl6")
+
+[node name="interface_dialogue" type="Node2D" unique_id=1263858878]
+script = ExtResource("1_k3nks")
+
+[node name="musique" type="AudioStreamPlayer" parent="." unique_id=738476760]
+
+[node name="sprite_arrière_plan" type="Sprite2D" parent="." unique_id=425332696]
+centered = false
+
+[node name="acteurs" type="Node2D" parent="." unique_id=1153682461]
+
+[node name="coulisse" type="Marker2D" parent="." unique_id=507965208]
+position = Vector2(928, 25)
+
+[node name="scène_gauche" type="Marker2D" parent="." unique_id=566976150]
+position = Vector2(11, 92)
+
+[node name="Sprite2D" type="Sprite2D" parent="scène_gauche" unique_id=1930487009]
+visible = false
+texture = SubResource("PlaceholderTexture2D_qxmyx")
+centered = false
+
+[node name="scène_centre" type="Marker2D" parent="." unique_id=1967279779]
+position = Vector2(273, 90)
+
+[node name="Sprite2D" type="Sprite2D" parent="scène_centre" unique_id=1095775902]
+visible = false
+texture = SubResource("PlaceholderTexture2D_qxmyx")
+centered = false
+
+[node name="scène_droite" type="Marker2D" parent="." unique_id=132793229]
+position = Vector2(534, 93)
+
+[node name="Sprite2D" type="Sprite2D" parent="scène_droite" unique_id=1073461503]
+visible = false
+texture = SubResource("PlaceholderTexture2D_qxmyx")
+centered = false
+
+[node name="hud_dialogue" type="MarginContainer" parent="." unique_id=1493517235]
+offset_top = 346.0
+offset_right = 800.0
+offset_bottom = 556.0
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="hud_dialogue" unique_id=978346808]
+layout_mode = 2
+theme = SubResource("Theme_qxmyx")
+theme_override_constants/separation = -5
+
+[node name="boite_nom" type="PanelContainer" parent="hud_dialogue/VBoxContainer" unique_id=1844170223]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="marges_boite_nom" type="MarginContainer" parent="hud_dialogue/VBoxContainer/boite_nom" unique_id=853338572]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_right = 5
+
+[node name="nom_label" type="RichTextLabel" parent="hud_dialogue/VBoxContainer/boite_nom/marges_boite_nom" unique_id=87243360]
+layout_mode = 2
+text = "hhhhhhhhhhhhhhhh"
+fit_content = true
+autowrap_mode = 0
+
+[node name="boite_dialogue" type="PanelContainer" parent="hud_dialogue/VBoxContainer" unique_id=689717137]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="marges_boite_dialogue" type="MarginContainer" parent="hud_dialogue/VBoxContainer/boite_dialogue" unique_id=489943093]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="réplique_label" type="RichTextLabel" parent="hud_dialogue/VBoxContainer/boite_dialogue/marges_boite_dialogue" unique_id=992798050]
+layout_mode = 2
+text = "hfghhfh"
+
+[node name="conteneur_réponses" type="CenterContainer" parent="." unique_id=373565930]
+offset_right = 800.0
+offset_bottom = 374.0
+
+[node name="liste_réponses" type="VBoxContainer" parent="conteneur_réponses" unique_id=1845303174]
+layout_mode = 2
+
+[node name="hud_controle" type="HBoxContainer" parent="." unique_id=792367876]
+offset_left = 1.0
+offset_top = 559.0
+offset_right = 91.0
+offset_bottom = 599.0
+
+[node name="bouton_option" type="Button" parent="hud_controle" unique_id=152908921]
+layout_mode = 2
+text = "Zorèwé"
+
+[node name="bouton_sauvegarder" type="Button" parent="hud_controle" unique_id=223127587]
+layout_mode = 2
+text = "Téchorûm"
+
+[node name="bouton_charger" type="Button" parent="hud_controle" unique_id=2050502974]
+layout_mode = 2
+text = "Woüazûm"
+
+[node name="bouton_quitter" type="Button" parent="hud_controle" unique_id=172770090]
+layout_mode = 2
+text = "Ganémûm"
+
+[connection signal="pressed" from="hud_controle/bouton_sauvegarder" to="." method="_on_bouton_sauvegarder_pressed"]
+[connection signal="pressed" from="hud_controle/bouton_charger" to="." method="_on_bouton_charger_pressed"]
+[connection signal="pressed" from="hud_controle/bouton_quitter" to="." method="_on_bouton_quitter_pressed"]

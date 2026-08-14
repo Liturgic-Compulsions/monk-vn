@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bejj01n2rvb0l"]
+
+[ext_resource type="Script" uid="uid://cstycluhmtim3" path="res://écran_parties_sauvegardées.gd" id="1_4ow6l"]
+
+[node name="écran_parties_sauvegardées" type="Control" unique_id=1391999870]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4ow6l")
+
+[node name="fond" type="PanelContainer" parent="." unique_id=150178063]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CenterContainer" type="CenterContainer" parent="fond" unique_id=537919694]
+layout_mode = 2
+
+[node name="liste_sauvegarde" type="VBoxContainer" parent="fond/CenterContainer" unique_id=1676035478]
+layout_mode = 2

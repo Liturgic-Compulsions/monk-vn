@@ -1,0 +1,10 @@
+MUSIQUE choeur1.wav
+FOND monastère_entrée_extérieure.png
+
+N|Cötöng|invisible|Ngûngè wam wûjû ranga wom racèng abono on üochong. Zöcö dodûsowé ngûbö morana ng ngöngè pacésa bèsûm gûzéjodûngè an bangûm an wûjû.|INV
+N|Cötöng|invisible|Céra, ngö zöcö wé yèm on üagoröm. Üècöngè èba wöm wûjû zûchûmöm.|INV
+ML01|Wöm wûjû|neutre|Ara ! Ngûngè an wûjû ranga ! Ngûzè Daram, ön wûjû rangösû cong racèng.|C
+N|Cötöng|invisible|Pöna töcam tûwö ûn Daram, sötö borûba ngatémûngè öyûréjö ng üècöm.|INV
+ML01|Daram|neutre|Cong doro tang yûpûüûm amang. Jésémöpûzè tèng an rancèng.|D
+
+FIN introduction2.dialogue

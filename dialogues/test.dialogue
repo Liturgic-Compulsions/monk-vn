@@ -1,0 +1,8 @@
+MUSIQUE choeur1.wav
+FOND image_monastère_extérieur.png
+
+N|Narrateur|invisible|test test test test test
+N|Narrateur|invisible|deez nuutz
+ML01|Portier|neutre|je suis à gauche de l'écran|G
+ML01|Portier|neutre|Je suis à droite de l'écran|D
+FIN test2.dialogue
