@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bxkadeiutsbix"]
+
+[ext_resource type="PackedScene" uid="uid://d2o3va4mwyx4w" path="res://personnage.tscn" id="1_gdti1"]
+[ext_resource type="Texture2D" uid="uid://d4cb15ylhv6mo" path="res://dead_monk.png" id="2_pwn5n"]
+
+[node name="murder_victim" unique_id=1871518198 instance=ExtResource("1_gdti1")]
+identifiant = "Victim"
+portraits = Dictionary[int, Texture2D]({
+1: ExtResource("2_pwn5n")
+})

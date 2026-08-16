@@ -1,0 +1,21 @@
+FOND monastère_couloir_intérieur.png
+MUSIQUE choeur1.wav
+
+ML01|Daram|neutre|Cétû, jésémöpûtûzè atang an dobéyûm ûn racèng. Yotû, an bow-|D
+BeMo|Wûjû congénö|colère|DARAM !|G
+BeMo|Wûjû congénö|colère|Üéyûpözûrazè an jésémöpûnam èn wûjû rangè roba mang!|G
+ML01|Daram|neutre|Ch-chajûm è-èba...|D
+BeMo|Wûjû congénö|colère|tsk. Tang chamöm. Angénözè.|G
+ML01|Daram|invisible|D-dé !|INV
+BeMo|Wûjû congénö|neutre|Bömö jûüéng ! Wécom rongo racèng yûso ! Chajûm cang cûngom, Daram ngû dom rangö, èba angénûzè canga jésémöpang.|C
+BeMo|Wûjû congénö|neutre|Ö ! Jéchözè, dosûzè Acam, ngûzè ön abonö cong racèng.|C
+BeMo|Acam|neutre|Daram jésémöpûzéüözè an dobéyûm ? Wétang nérécopö.|D
+BeMo|Acam|neutre|Cöng racéng ngûbè... taüaténg, cézé... Zûchûmûngè on néüégè nocèno.|D
+N|Cötöng|invisible|Acam gowûüûzè maüö zöpön bam minöwé roba pèböbè nögöüan.|INV
+BeMo|Acam|neutre|...|C
+BeMo|Acam|neutre|Üèyûpözûrèzè tèng wam jû... Gûzéjodûnangö an jöméyomûm atang rom na pöüo...|C
+BeMo|Acam|neutre|Zöcö... Sécatang abonö... Zömö noyèng. Ön jû wècö manga : èn jû wöm omosapéwé dosûbö "homicide" rén "meutre"...|C
+BeMo|Acam|neutre|Wöm wûjû, bömö Porûng, sûréwézé...|C
+N|Cötöng|invisible|Notéchûm cang cang... "sûréwé"... Chamûzéngè cang sécatang. Böbûn an bangûm wam wûjû céngöbangûmachènémö robû én yûya. Èng céra, döüodé amang èn noyèng.|INV
+BeMo|Acam|neutre|Rözûwé, pénépûnarèngè èba naparé cûng racèng tötöpûbö ayodûm wémang.|C
+QUESTION	BeMo|Acam|neutre|Tang gûzéjodöngè.|C	Gûzéjodûzè an gowûüöm>rencontre_chapelle.dialogue	Gûzéjodûzè an chamöm>game_over1.dialogue

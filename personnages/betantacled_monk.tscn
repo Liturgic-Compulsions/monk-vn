@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://drmfklsd2haq6"]
+
+[ext_resource type="PackedScene" uid="uid://d2o3va4mwyx4w" path="res://personnage.tscn" id="1_kgjd7"]
+[ext_resource type="Texture2D" uid="uid://gh5roafejvtc" path="res://betentacled_monk.png" id="2_vxgbc"]
+[ext_resource type="Texture2D" uid="uid://bwsg1of4qvwvn" path="res://betentacled_monk_colère.png" id="3_xx143"]
+
+[node name="betantacled_monk" unique_id=1871518198 instance=ExtResource("1_kgjd7")]
+identifiant = "BeMo"
+portraits = Dictionary[int, Texture2D]({
+1: ExtResource("2_vxgbc"),
+2: ExtResource("3_xx143")
+})
